@@ -38,7 +38,7 @@
   gap: 20px;
 }
 
-.icons {
+ .icons {
   width: 25px;
   cursor: pointer;
 }
@@ -47,4 +47,27 @@
   display: flex;
   align-items: center;
   gap: 5px;
+  position: relative;
+}
+ .dropdown{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: max-content;
+    background: #191919; 
+    padding: 18px 22px;
+    border-radius: 2px;
+    text-decoration: underline;
+    z-index: 1;
+    display: none;
+}
+.nav .dropdown p{
+    font-size: 30px;
+    cursor: pointer;
+}
+.profile:hover .dropdown{
+    display: block;
+}
+.nav-dark{
+  background: #141414;
 }
