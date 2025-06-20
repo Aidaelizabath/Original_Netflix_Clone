@@ -5,10 +5,11 @@ import search from '../../assets/cards/search2.png'
 import bell from '../../assets/cards/bell2.png'
 import profile from '../../assets/cards/profile1.png'
 import caret from '../../assets/cards/caret.png'
+import { logout } from '../../firebase'
 
 const Navbar = () => {
 
-const navRef == useRef=();
+const navRef =useRef();
 useEffect(()=>{
   window.addEventListener('scroll',()=>{
     if(window.scrollY >=80){
@@ -16,8 +17,7 @@ useEffect(()=>{
     }else{
       navRef.current.classList.remove('nav-dark')
     }
-    }
-  })
+    })
 },[])
 
   return (
@@ -41,7 +41,7 @@ useEffect(()=>{
           <img src={profile} alt="Profile" className='icons' />
           <img src={caret} alt="Dropdown" className='icons' />
           <div className="dropdown">
-            <p>Sign Out Of Netflix</p>
+            <p onClick={()=>{logout()}}>Sign Out Of Netflix</p>
           </div>
         </div>
       </div>

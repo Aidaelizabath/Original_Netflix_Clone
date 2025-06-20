@@ -30,7 +30,7 @@ const Home = () => {
           <Titlecards title={"Blockbuster Movies"} category={"top_rated"}/>
           <Titlecards  title={"Only on Netflix"} category={"popular"}/>
           <Titlecards  title={"Upcoming"} category={"upcoming"}/>
-          <Titlecards  title={"Topics for you"} category={"now_playing"}/>
+          <Titlecards  title={"Top pics for you"} category={"now_playing"}/>
         </div>
         <Footer/>
     </div>
