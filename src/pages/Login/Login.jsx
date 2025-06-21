@@ -43,7 +43,7 @@ const user_auth =async (event)=>{
         <div className="form-help">
           <div className="remember">
             <input type="checkbox"  />
-            <label htmlFor="">Remember ne</label>
+            <label htmlFor="">Remember me</label>
           </div>
           <p>Need Help?</p>
         </div>
