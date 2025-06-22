@@ -13,15 +13,25 @@ A sleek and responsive **Netflix Clone** built with **React.js + Vite**, replica
 
 Netflix-Clone/
 ├── src/
+
 │ ├── assets/cards/ # Static images and icons
+
 │ ├── components/ # Navbar, Footer, Title Cards
+
 │ ├── pages/ # Home, Login, Player
+
 │ ├── App.jsx # App layout and routing
+
 │ ├── firebase.js # Firebase configuration
+
 │ └── main.jsx # ReactDOM entry point
+
 ├── .env # Firebase API keys (not committed)
+
 ├── package.json # Project metadata and dependencies
+
 ├── vite.config.js # Vite setup
+
 └── index.html # App root HTML
 
 ## 🚀 Features
