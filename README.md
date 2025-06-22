@@ -1,13 +1,34 @@
-# React + Vite
+# 🎬 Netflix Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek and responsive **Netflix Clone** built with **React.js + Vite**, replicating Netflix’s core UI and authentication functionality using **Firebase**.
 
-Currently, two official plugins are available:
+🧱 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Frontend:** React.js (with Vite)
+- **Styling:** CSS
+- **Auth:** Firebase Authentication
+- **Deployment Ready:** Yes
 
-## Expanding the ESLint configuration
+## 📁 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-"# Original_Netflix_Clone" 
+Netflix-Clone/
+├── src/
+│ ├── assets/cards/ # Static images and icons
+│ ├── components/ # Navbar, Footer, Title Cards
+│ ├── pages/ # Home, Login, Player
+│ ├── App.jsx # App layout and routing
+│ ├── firebase.js # Firebase configuration
+│ └── main.jsx # ReactDOM entry point
+├── .env # Firebase API keys (not committed)
+├── package.json # Project metadata and dependencies
+├── vite.config.js # Vite setup
+└── index.html # App root HTML
+
+## 🚀 Features
+
+- 🔐 Firebase Authentication (Login / Signup)
+- 🏠 Netflix-like Home UI
+- 🎞️ Movie tiles using local assets
+- 🎬 Custom Player Page
+- 🔁 Reusable React Components
+- ⚡ Vite for fast development
