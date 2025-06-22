@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Player.css';
-import back_arrow from '../../assets/cards/back-arrow-icon-png-25.jpg';
+import back_arrow from '../../assets/cards/back.png';
 import { useNavigate, useParams } from 'react-router-dom';
 
 const Player = () => {

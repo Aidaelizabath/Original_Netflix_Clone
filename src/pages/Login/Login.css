@@ -1,98 +1,141 @@
-.login{
-    height: 100vh;
-    background-image: linear-gradient(#0000007e,#0000007e),url(/background_banner.jpg);
-    padding: 20px 8%;
+/* Outer wrapper */
+.login {
+  height: 100vh;
+  width: 100%;
+  background-image: url('/background_banner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* 👈 push content to top */
+  padding-top: 40px;
 }
-.login-logo{
-    width: 150px;
 
+/* New container to group logo + form */
+.login-content {
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.login-form{
-    width: 100%;
-    max-width: 450px;
-    background: rgba(0,0,0,0.75);
-    border-radius:4px ;
-    padding: 60px;
-    margin: auto;
-}
-.login-form h1{
-    font-size: 32px;
-    font-weight: 500;
-    margin-bottom: 28px;
-}
-.login-form input{
-    width: 100%;
-    height: 50px;
-    background: #333;
-    color: white;
-    margin: 12px 0;
-    border: 0;
-    outline: 0;
-    border-radius: 4px;
-    padding: 16px 20px;
-    font-size: 16px;
-    font-weight:500 ;
-}
-.login-form input::placeholder{
-    font-size:16px;
-    font-weight: 500;
-}
-.login-form button{
-    width: 100%;
-    border: 0;
-    outline: 0;
-    padding: 16px;
-    background: #e50914;
-    color: white;
-    border-radius: 4px;
-    font-size: 16px;
-    font-weight: 500;
-    margin-top: 20px;
-    cursor: pointer;
 
+/* Netflix Logo */
+.login-logo {
+  width: 150px;
+  margin-bottom: 30px;
 }
-.form-help{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #b3b3b3;
-    font-size:13px ;
+
+/* Login form container */
+.login-form {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  padding: 60px;
 }
-.remember{
-    display: flex;
-    align-items: center;
-    gap: 5px;
+
+/* Form header */
+.login-form h1 {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 28px;
+  color: white;
 }
-.remember input{
-    width: 18px;
-    height: 18px;
+
+/* Form inputs */
+.login-form input {
+  width: 100%;
+  height: 50px;
+  background: #333;
+  color: white;
+  margin: 12px 0;
+  border: 0;
+  outline: 0;
+  border-radius: 4px;
+  padding: 16px 20px;
+  font-size: 16px;
+  font-weight: 500;
 }
-.form-switch{
-    margin-top: 40px;
-    color: #737373;
+
+.login-form input::placeholder {
+  font-size: 16px;
+  font-weight: 500;
 }
-.form-switch span{
-    margin-left: 6px;
-    color: #fff;
-    font-weight: 500;
-    cursor: pointer;
+
+/* Submit button */
+.login-form button {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 16px;
+  background: #e50914;
+  color: white;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 20px;
+  cursor: pointer;
 }
-.login-spinner{
-    width:100% ;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+/* Help area below form */
+.form-help {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #b3b3b3;
+  font-size: 13px;
+  margin-top: 20px;
 }
-.login-spinner img{
-    width: 60px;
+
+/* Remember me checkbox */
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
-@media (max-width:500px){
-    .login{
-        padding: 15px 5%;
-    }
-    .login-form{
-       padding: 20px;
-       margin-top: 30px; 
-    }
+
+.remember input {
+  width: 18px;
+  height: 18px;
+}
+
+/* Switch between Sign In/Sign Up */
+.form-switch {
+  margin-top: 40px;
+  color: #737373;
+}
+
+.form-switch span {
+  margin-left: 6px;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Spinner while loading */
+.login-spinner {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+}
+
+.login-spinner img {
+  width: 60px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+  .login {
+    padding: 15px 5%;
+  }
+
+  .login-form {
+    padding: 20px;
+    margin-top: 30px;
+  }
 }

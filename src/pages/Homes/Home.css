@@ -1,11 +1,19 @@
 .hero{
     position: relative;
 }
-.banner-img{
-    width: 100%;
-    mask-image: linear-gradient(to right,transparent,black 75%);
-    -websit-mask-image:linear-gradient(to right,transparent,black 75%):
+.banner-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  mask-image: linear-gradient(to right, transparent 10%, black 85%);
+  -webkit-mask-image: linear-gradient(to right, transparent 10%, black 85%);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+  filter: brightness(1.1) contrast(1.2) saturate(1.5);
+  transition: filter 0.3s ease-in-out;
 }
+
+
 .hero-caption{
     position: absolute;
     width: 100%;

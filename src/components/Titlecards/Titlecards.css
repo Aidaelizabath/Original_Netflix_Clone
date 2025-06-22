@@ -7,8 +7,12 @@
 }
 .card-list{
     display: flex;
-    gap: 10px;
-    overflow-x: scroll;
+  gap: 10px;
+  overflow-x: auto;         
+  overflow-y: hidden;
+  white-space: nowrap;      
+  padding-bottom: 10px;    
+  scroll-behavior: smooth; 
 }
 .card-list::-webkit-scrollbar{
     display: none;
@@ -19,6 +23,7 @@
     cursor: pointer;
 }
 .card-list .card{
+    flex: 0 0 auto;
     position: relative;
 }
 .card-list .card p{
